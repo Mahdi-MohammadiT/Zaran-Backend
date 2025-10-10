@@ -1,0 +1,35 @@
+{
+  // ===== VS Code Editor Settings =====
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // ===== ESLint & Prettier =====
+  "eslint.enable": true,
+  "eslint.run": "onSave",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "es5",
+
+  // ===== Codex / ChatGPT Settings =====
+  "chatgpt.model": "gpt-5", // همیشه GPT-5
+  "chatgpt.inlineCompletion.enable": true,
+  "chatgpt.inlineCompletion.trigger": "onTyping",
+  "chatgpt.inlineCompletion.acceptKey": "tab",
+  "chatgpt.contextLevel": "project", // کل پروژه به عنوان context
+  "chatgpt.mode.default": "coding", // حالت پیش‌فرض
+  "chatgpt.prompts": {
+    "coding": "Always write clean, modern JavaScript (ES6+). Use async/await instead of .then(). Follow React best practices with hooks and functional components.",
+    "explain": "Explain the selected code step by step in simple terms.",
+    "refactor": "Refactor the selected code to be cleaner, more efficient, and follow best practices."
+  },
+
+  // ===== Security =====
+  "chatgpt.storeApiKeySecurely": true
+}
