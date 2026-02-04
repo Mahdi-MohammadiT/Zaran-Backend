@@ -1,7 +1,7 @@
 import { catchAsync } from "vanta-api";
 import Product from "../Models/ProductMd.js";
 import Category from "../Models/CategoryMd.js";
-import Brand from "../Models/BrandMd";
+import Brand from "../Models/BrandMd.js";
 export const search = catchAsync(async (req, res, next) => {
   const { query } = req.query;
   const products = (

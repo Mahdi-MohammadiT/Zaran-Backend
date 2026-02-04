@@ -1,6 +1,10 @@
 import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
-  fullName: {
+  firstName: {
+    type: String,
+    default: "",
+  },
+  lastName: {
     type: String,
     default: "",
   },
@@ -9,6 +13,17 @@ const userSchema = new mongoose.Schema({
     required: [true, "Phone number is required"],
     match: [/^(\+98|0)?9\d{9}$/, "Invalid phone number format"],
     unique: [true, "Phone number must be unique"],
+  },
+  nationalCode: {
+    type: String,
+    default: "",
+  },
+  email: {
+    type: String,
+    default: "",
+  },
+  birthDate: {
+    type: Date,
   },
   password: {
     type: String,
